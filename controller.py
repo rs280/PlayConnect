@@ -19,12 +19,6 @@ def start():
     global left
     global right
     global space
-    print(up)
-    print(down)
-    print(left)
-    print(right)
-    print(space)
-
     cap = cv2.VideoCapture(0)
     mp_pose = mp.solutions.pose
     pose_image = mp_pose.Pose(static_image_mode=True, min_detection_confidence=0.5, model_complexity=1)
@@ -200,7 +194,6 @@ def start():
         if key & 0xFF == ord('q'):
             print('Quitting...')
             break
-        
     camera_video.release()
     cv2.destroyAllWindows()
     cv2.imshow("PlayConnect", frame)
