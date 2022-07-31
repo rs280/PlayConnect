@@ -3,5 +3,5 @@
 ## TO INSTALL
 
 `pip -r requirements.txt`
-**Enter**
-`python -u controller.py`
+
+\n`python -u controller.py`
